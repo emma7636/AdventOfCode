@@ -4,15 +4,15 @@ with open('Day 2 - Controls/numberfile.txt', 'rt') as f:
         var = line.split()
         tupleArray.append((var[0], int(var[1])))
 
-posX = 0
-posY = 0
+hozPos = 0
+depth = 0
 for command in tupleArray:
     match command[0]:
         case 'forward':
-            posX += command[1]
+            hozPos += command[1]
         case 'down':
-            posY += command[1]
+            depth += command[1]
         case 'up':
-            posY -= command[1]
+            depth -= command[1]
 
-print(posX * posY)
+print(hozPos * depth)
