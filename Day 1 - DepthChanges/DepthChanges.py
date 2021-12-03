@@ -21,5 +21,4 @@ for int in intArray:
         print(str(int) + changes)
         prevInt = int
 
-
 print('Depth increased ' + str(increaseCount) + ' times.')

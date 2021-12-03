@@ -19,8 +19,6 @@ def countbits(number, scale):
 for number in intArray:
     countbits(number, 0)
 
-print(int(str(intArray[0]), 2))
-
 gammaRate = int('000000000000', 2)
 epsilonRate = int('000000000000', 2)
 pos = 0
@@ -30,8 +28,5 @@ for number in numbers:
     else:
         epsilonRate = epsilonRate | (int('1', 2) << pos)
     pos += 1
-
-print(gammaRate)
-print(epsilonRate)
 
 print(gammaRate * epsilonRate)
