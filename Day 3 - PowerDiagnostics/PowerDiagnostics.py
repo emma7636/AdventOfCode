@@ -8,17 +8,16 @@ for binary in binaryArray:
 
 numbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-def doStuff(number, scale):
-    
+def countbits(number, scale):
     number = number - number%1
     if (number%10 == 1):
         numbers[scale] += 1
     if (scale < len(numbers)):
         scale += 1
-        doStuff(number/10, scale)
+        countbits(number/10, scale)
 
 for number in intArray:
-    doStuff(number, 0)
+    countbits(number, 0)
 
 print(int(str(intArray[0]), 2))
 
