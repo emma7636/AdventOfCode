@@ -1,8 +1,6 @@
-from django.http import HttpResponse
-
 numberArray = []
 plateArray = []
-with open('Day 4 - Bingo/numberfile.txt', 'rt') as f:
+with open('Day 4 - WinBingo/numberfile.txt', 'rt') as f:
     for number in f.readline().split(','):
                 numberArray.append(int(number))
     
