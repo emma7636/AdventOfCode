@@ -60,4 +60,4 @@ for i in range(len(ventMap)):
         if ventMap[i][j] >= 2:
             count += 1
 
-print(count)
+print('There are ' + str(count) + ' points where two or more lines overlap')
