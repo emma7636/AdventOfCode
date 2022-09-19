@@ -22,7 +22,6 @@ for positionCollection in positionArray:
     position2[1] = int(position2[1])
 
     if position1[0] == position2[0]:
-        """ print(position1, position2, 'x') """
         if position1[1] < position2[1]:
             for i in range(position1[1], position2[1] + 1):
                 ventMap[position1[0]][i] += 1
@@ -30,18 +29,12 @@ for positionCollection in positionArray:
             for i in range(position2[1], position1[1] + 1):
                 ventMap[position1[0]][i] += 1
     elif position1[1] == position2[1]:
-        """ print(position1, position2, 'y') """
         if position1[0] < position2[0]:
             for i in range(position1[0], position2[0] + 1):
                 ventMap[i][position1[1]] += 1
         else:
             for i in range(position2[0], position1[0] + 1):
                 ventMap[i][position1[1]] += 1
-"""     else:
-        print(position1, position2) """
-
-""" for i in range(1000):
-    print(str(i) + ': ' + str(ventMap[i][340])) """
 
 count = 0
 for i in range(len(ventMap)):
