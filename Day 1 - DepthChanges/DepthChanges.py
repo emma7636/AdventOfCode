@@ -21,4 +21,4 @@ for int in intArray:
         print(str(int) + changes)
         prevInt = int
 
-print('Depth increased ' + str(increaseCount) + ' times.')
+print('Depth increased ' + str(increaseCount) + ' times out of ' + str(len(intArray)) + ' possible.')

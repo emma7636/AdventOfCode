@@ -35,4 +35,4 @@ for int in intArray:
             changes = ' (Decreased)'
         print(str(currentInt) + changes)
 
-print('Depth increased ' + str(increaseCount) + ' times.')
+print('Depth increased ' + str(increaseCount) + ' times out of ' + str(len(intArray)) + ' possible.')
