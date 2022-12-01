@@ -1,5 +1,5 @@
 binaryArray = []
-with open('Day 1 - DepthChanges/numberfile.txt', 'rb') as f:
+with open('2021/Day 1 - DepthChanges/numberfile.txt', 'rb') as f:
     binaryArray = list(f)
 
 intArray = []

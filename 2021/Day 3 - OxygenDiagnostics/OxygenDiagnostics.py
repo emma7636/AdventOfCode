@@ -1,5 +1,5 @@
 binaryArray = []
-with open('Day 3 - OxygenDiagnostics/numberfile.txt', 'rb') as f:
+with open('2021/Day 3 - OxygenDiagnostics/numberfile.txt', 'rb') as f:
     binaryArray = list(f)
 
 intArray = []

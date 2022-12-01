@@ -2,7 +2,7 @@ from this import d
 
 
 positionArray = []
-with open('Day 5 - HydrothermalVents/numberfile.txt', 'rt') as f:
+with open('2021/Day 5 - HydrothermalVents/numberfile.txt', 'rt') as f:
     for position in f:
         positionArray.append(position)
 

@@ -1,6 +1,6 @@
 numberArray = []
 plateArray = []
-with open('Day 4 - WinBingo/numberfile.txt', 'rt') as f:
+with open('2021/Day 4 - WinBingo/numberfile.txt', 'rt') as f:
     for number in f.readline().split(','):
                 numberArray.append(int(number))
     
