@@ -1,7 +1,7 @@
 class Lanternfish:
     def __init__(self, timer, count):
         self.timer = timer
-        self.count = count
+        self.count = count #Thanks Jakob!
 
 lanternfish = []
 with open('2021/Day 6 - Lanternfish/numberfile.txt', 'rt') as f:
