@@ -9,7 +9,8 @@ leastFuel = sys.maxsize
 for i in range(1967):
     fuelConsumption = 0
     for position in crabPositions:
-        fuelConsumption += abs(position - i)
+        unit = abs(position - i)
+        fuelConsumption += unit * ((unit + 1) / 2) #nth triangular number formula
     
     #isLess = leastFuel > fuelConsumption
     #leastFuel = fuelConsumption * isLess + leastFuel * (not isLess) #branchless min calculation, not faster in this case
