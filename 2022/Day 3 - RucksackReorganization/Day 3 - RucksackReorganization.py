@@ -1,5 +1,5 @@
 backpacks = []
-with open('2022/Day 3 - Rucksack Reorganization/numberfile.txt') as f:
+with open('2022/Day 3 - RucksackReorganization/numberfile.txt') as f:
     for line in f.readlines():
         backpacks.append(line)
 
